@@ -84,6 +84,21 @@ This will process the contents of `question.md` and display the analysis.
 - "query: What are the top 5 largest tables by row count?"
 - "query: Show the relationships between the main tables"
 
+## Roadmap
+
+I'm continuously improving this tool with new features. Here's what's coming next:
+
+- [  ] **Conversation Context**: Enable the application to maintain context of conversation history for more intuitive follow-up questions and analysis
+- [  ] **Intelligent Query Analysis**: Implement a pre-processing layer where Claude analyzes if questions need additional context or clarification before providing answers
+  - This will help identify when a question is ambiguous or requires more specific information
+  - Will automatically ask follow-up questions when necessary to improve response quality
+- [  ] **Token Optimization**: Improve efficiency by implementing a system to identify and only include relevant tables in the context sent to Claude
+  - This will reduce token usage and improve response speed
+  - Will allow the tool to work with much larger database schemas
+- [  ] **MySQL Support**: Extend functionality beyond PostgreSQL to work with MySQL databases
+  - Implement MySQL-specific schema extraction and query generation
+  - Ensure compatibility with MySQL syntax and data types
+
 ## How It Works
 
 1. The tool connects to your PostgreSQL database and extracts schema information
